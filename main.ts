@@ -79,15 +79,7 @@ mySprite = sprites.create(img`
     . . . . . b d d 1 1 b . . . . . 
     `, SpriteKind.Player)
 controller.moveSprite(mySprite)
-tiles.setTilemap(tiles.createTilemap(hex`0a00070001010101010101010101010000000000000000010100000000000000000101000000000000000001010000000000000000010100000000000000000101010101010101010101`, img`
-    2 2 2 2 2 2 2 2 2 2 
-    2 . . . . . . . . 2 
-    2 . . . . . . . . 2 
-    2 . . . . . . . . 2 
-    2 . . . . . . . . 2 
-    2 . . . . . . . . 2 
-    2 2 2 2 2 2 2 2 2 2 
-    `, [myTiles.transparency16,sprites.builtin.forestTiles0], TileScale.Sixteen))
+tiles.setTilemap(tilemap`level`)
 numHats = 1
 for (let index = 0; index <= 1; index++) {
     e = sprites.create(img`
